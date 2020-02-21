@@ -1,0 +1,17 @@
+<%= @book_info['title'] %>
+
+<br>
+<%= @book_info['author_name'].first %>
+
+<br>
+<br>
+<% @nyt_reviews.each do |x| %>
+   <%= x['summary'] %>
+
+   <br>
+   <%= x['publication_dt'] %>
+   
+   <br>
+   <br>
+<% end %>
+

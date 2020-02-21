@@ -20,6 +20,5 @@ class SearchController < ApplicationController
       lib_response = @lib_conn.get.env.response_body
       lib_parsed = JSON.parse(lib_response)
       @book_info = lib_parsed["docs"].first
-      require "pry"; binding.pry
    end
 end
